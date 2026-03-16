@@ -14,7 +14,7 @@ async function main() {
             subtitle: "Nos encargamos de todo: prenda, estampado y entrega. Presupuesto inmediato y entrega en 24-48 horas.",
             ctaPrimary: "Solicitar presupuesto por WhatsApp",
             ctaSecondary: "Ver trabajos realizados",
-           ,
+            imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=1000",
         },
     });
 
