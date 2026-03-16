@@ -90,27 +90,42 @@ export default function ContactPageClient() {
                         </div>
                     </div>
 
-                    {/* Right Card: Contact Form */}
+                    {/* Right Card: CTA & Form */}
                     <div className="animate-in fade-in slide-in-from-right duration-700 delay-400">
                         <div className="bg-[#1e293b] p-10 lg:p-12 rounded-[3.5rem] text-white shadow-2xl shadow-blue-900/10 flex flex-col justify-center min-h-[500px]">
-                            <h2 className="text-3xl lg:text-4xl font-black leading-tight text-center mb-4">
-                                ¿Necesitás un presupuesto?
+                            <h2 className="text-4xl lg:text-5xl font-black leading-tight text-center mb-6">
+                                ¿Necesitás un presupuesto rápido para tu empresa?
                             </h2>
                             <p className="text-slate-400 text-lg font-medium text-center mb-10">
-                                Completá el formulario y te responderemos a la brevedad.
+                                Atendemos consultas de empresas en tiempo real. Completá el formulario o contactanos por WhatsApp.
                             </p>
                             
                             <ContactForm />
 
-                            <div className="mt-10 pt-10 border-t border-slate-700/50">
+                            <div className="mt-8 space-y-6">
+                                <div className="flex items-center gap-4">
+                                    <div className="h-px bg-slate-700 flex-1" />
+                                    <span className="text-slate-500 font-bold text-xs uppercase tracking-widest">o también</span>
+                                    <div className="h-px bg-slate-700 flex-1" />
+                                </div>
+
                                 <a 
                                     href={`https://wa.me/${whatsapp}`} 
                                     target="_blank"
-                                    className="block w-full bg-[#25D366] hover:bg-[#20ba59] text-white text-center py-4 rounded-2xl text-lg font-black shadow-xl shadow-green-500/20 transition-all active:scale-95 flex items-center justify-center gap-3"
+                                    className="block w-full bg-[#25D366] hover:bg-[#20ba59] text-white text-center py-6 rounded-[1.8rem] text-2xl font-black shadow-xl shadow-green-500/20 transition-all active:scale-95 flex items-center justify-center gap-4"
                                 >
-                                    <MessageCircle size={24} />
-                                    O escribinos por WhatsApp
+                                    <MessageCircle size={32} />
+                                    Hablar ahora
                                 </a>
+                                
+                                <div className="text-center space-y-2">
+                                    <div className="flex items-center justify-center gap-2">
+                                        <div className="w-2 h-2 bg-green-500 rounded-full shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                                        <p className="text-slate-400 font-bold text-[11px] uppercase tracking-[0.2em]">
+                                            Operativo ahora
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,3 +134,4 @@ export default function ContactPageClient() {
         </div>
     );
 }
+
