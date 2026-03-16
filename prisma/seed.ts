@@ -6,17 +6,17 @@ async function main() {
     console.log("Seeding database...");
 
     // Hero Section
-    await prisma.heroSection.upsert({
-        where: { id: 1 },
-        update: {},
-        create: {
-            title: "Uniformes personalizados para empresas",
-            subtitle: "Nos encargamos de todo: prenda, estampado y entrega. Presupuesto inmediato y entrega en 24-48 horas.",
-            ctaPrimary: "Solicitar presupuesto por WhatsApp",
-            ctaSecondary: "Ver trabajos realizados",
-           ,
-        },
-    });
+
+await prisma.heroSection.upsert({
+  where: { id: 1 },
+  update: {},
+  create: {
+    title: "Uniformes personalizados para empresas",
+    subtitle: "Nos encargamos de todo: prenda, estampado y entrega. Presupuesto inmediato y entrega en 24-48 horas.",
+    ctaPrimary: "Solicitar presupuesto por WhatsApp",
+    ctaSecondary: "Ver trabajos realizados",
+  },
+});
 
     // Global Settings
     await prisma.globalSettings.upsert({
